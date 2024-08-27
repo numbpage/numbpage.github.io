@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-US" class="tape-clean tape-pink">
 <meta charset="utf-8">
+
 <title>numb.page</title>
+
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#eee833">
 <meta name="description" content="overstanding numerology">
 <link rel="help" href="https://github.com/numbpage">
-
 <link rel href="https://s9a.github.io/tape">
 <style data-via="https://s9a.github.io/tape">
   :root {
@@ -71,13 +72,14 @@
   }
 
   body {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 2rem;
+    margin: 2rem;
+    overflow-wrap: anywhere;
   }
   
+  * { box-sizing: border-box }
   a { display: inline-flex }
   b a { text-decoration-style: dotted }
+  dl a { display: inline }
 
   .logo {
     box-sizing: border-box;
@@ -97,6 +99,10 @@
     max-width: 25em;
   }
   
+  dd i {
+    font-size: 1.236em;
+  }
+  
   .cad { padding-inline: 1ch }
   .pad { padding: 1rem }
   
@@ -113,12 +119,16 @@
   }
   
   dt {
-    font-weight: bold;
     margin-block: 1em 0;
   }
   
   dt:first-child {
     margin-block: 0;
+  }
+  
+  dt[class*=tape],
+  dd[class*=tape] {
+    text-indent: 1ch;
   }
   
   :focus {
@@ -130,17 +140,17 @@
   }
 </style>
 
-<header>
+<header id="hi">
   <a class="pad tape-white logo" href="">
     <span class="wordwave">numb</span>
     <span class="wordwave">page</span>
   </a>
 </header>
 
-<article class="blurb">
+<article class="blurb" id="numerology">
   <h2>
     <a class="pad pipe tape-blue" href="https://s9a.page/angel">
-      page your angel
+      angel interpreter
     </a>
   </h2>
   <h3 class="pad tape-blue flush">number meanings</h3>
@@ -188,6 +198,84 @@
   </dl>
 </article>
 
-<aside class="blurb" aria-label="numeronyms">
-  <h3><a class="pad tape-yellow" href="https://s9a.page/terms">comfortably number</a></h3>
+<aside class="blurb" id="technology" aria-label="numeronyms">
+  <h3><a class="pad tape-yellow" style="--tape-hex:orange" href="https://s9a.page/terms">comfortably number</a></h3>
 </aside>
+
+<article id="astrology">
+  <h2>
+    <a class="pad pipe tape-white" href="#astrology">
+      astrology aspects
+    </a>
+  </h2>
+  <dl>
+    <dt class="tape-white" id="conjunction"><b>360º</b> = 360º ÷ 1
+    <dd class="tape-white"><i>conjunction</i>
+    <dd class="tape-white">cycle reset
+    <dd class="tape-white">a new era begins
+    <dt class="tape-white" id="opposition"><b>180º</b> = 360º ÷ 2
+    <dd class="tape-white"><i>opposition</i>
+    <dd class="tape-white"><strong>intensity</strong>
+    <dd class="tape-white">cycle peak
+    <dt class="tape-black tape-blue"><b>160º</b> = 40º × 4
+    <dd class="tape-black tape-blue"><i>quad<a href="#novile">novile</a></i>
+    <dt class="tape-black tape-green"><b>154º</b> ≈ 1080º ÷ 7
+    <dd class="tape-black tape-green"><i>tri<a href="#septile">septile</a></i>
+    <dt class="tape-black" id="quincunx"><b>150º</b> = 30º × 5
+    <dd class="tape-black"><i>quincunx</i>
+    <dd class="tape-black"><i>inconjunct</i>
+    <dd class="tape-black">perplexity
+    <dt class="tape-black tape-yellow"><b>144º</b> = 72º × 2
+    <dd class="tape-black tape-yellow"><i>bi<a href="#quintile">quintile</a></i>
+    <dt class="tape-black"><b>135º</b> = 45º × 3
+    <dd class="tape-black"><i>tri<a href="#octile">octile</a></i>
+    <dt class="tape-white" id="trine"><b>120º</b> = 360º ÷ 3
+    <dd class="tape-white"><i>trine</i>
+    <dd class="tape-white">powerful <b>flow</b>
+    <dd class="tape-white">identical element
+    <dt class="tape-black tape-green"><b>103º</b> ≈ 720º ÷ 7 
+    <dd class="tape-black tape-green"><i>bi<a href="#septile">septile</a></i>
+    <dt class="tape-white" id="square"><b>90º</b> = 360º ÷ 4
+    <dd class="tape-white"><i>square</i>
+    <dd class="tape-white">challenge
+    <dd class="tape-white">lateral opportunity
+    <dd class="tape-white">learning
+    <dt class="tape-black tape-blue"><b>80º</b> = 40º × 2
+    <dd class="tape-black tape-blue"><i>bi<a href="#novile">novile</a></i>
+    <dt class="tape-black tape-yellow" id="quintile"><b>72º</b> = 360º ÷ 5
+    <dd class="tape-black tape-yellow"><i>quintile</i>
+    <dd class="tape-black tape-yellow">artful innovation
+    <dd class="tape-black tape-yellow">freestyle flow
+    <dt class="tape-white" id="sextile"><b>60º</b> = 360º ÷ 6
+    <dd class="tape-white"><i>sextile</i>
+    <dd class="tape-white">ease
+    <dd class="tape-white">complementary element
+    <dt class="tape-black tape-green" id="septile"><b>51º</b> ≈ 360º ÷ 7 
+    <dd class="tape-black tape-green"><i>septile</i>
+    <dd class="tape-black tape-green">powerful creation
+    <dd class="tape-black tape-green">hidden flow
+    <dt class="tape-black" id="octile"><b>45º</b> = 360º ÷ 8
+    <dd class="tape-black"><i>octile</i>
+    <dd class="tape-black">stimulation
+    <dd class="tape-black"><a href="#square">square</a> ÷ 2
+    <dt class="tape-black tape-blue" id="novile"><b>40º</b> = 360º ÷ 9
+    <dd class="tape-black tape-blue"><i>novile</i>
+    <dd class="tape-black tape-blue"><b>fate</b> happens
+    <dd class="tape-black tape-blue">perfection thrills
+    <dt class="tape-black tape-yellow" id="decile"><b>36º</b> = 360º ÷ 10
+    <dd class="tape-black tape-yellow"><i>decile</i>
+    <dd class="tape-black tape-yellow"><i>semi<a href="#quintile">quintile</a></i>
+    <dd class="tape-black tape-yellow">artful progress
+    <dt class="tape-black" id="elftile"><b>33º</b> ≈ 360º ÷ 11
+    <dd class="tape-black"><i><b>elf</b>tile</i>
+    <dd class="tape-black">transcendence
+    <dd class="tape-black">faith transcends duality
+    <dt class="tape-black"><b>30º</b> = 360º ÷ 12
+    <dd class="tape-black"><i>semi<a href="#sextile">sextile</a></i>
+    <dd class="tape-black">juxtaposition
+    <dd class="tape-black">inspiration
+  </dl>
+  <h3>
+    <a class="pad tape-yellow" href="https://s9a.page/orb">aspect explorer</a>
+  </h3>
+</article>
