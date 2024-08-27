@@ -2,7 +2,7 @@
 <html lang="en-US" class="tape-clean tape-pink">
 <meta charset="utf-8">
 <title>numb.page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#eee833">
 <meta name="description" content="overstanding numerology">
 <link rel="help" href="https://github.com/numbpage">
@@ -10,7 +10,7 @@
 <link rel href="https://s9a.github.io/tape">
 <style data-via="https://s9a.github.io/tape">
   :root {
-    --tape-white: #f5f5f5;
+    --tape-white: #e0e0e0;
     --tape-black: #090909;
     --tape-pink: #fbbfff;
     --tape-yellow: #eee833;
@@ -45,13 +45,17 @@
   .tape-erase * {
     color: transparent !important;
   }
+  ::selection {
+    background: indigo;
+    color: lightsalmon;
+  }
 </style>
 
 <style>
   html {
     font-size: calc(1em + 1vmin);
     font-family: sans-serif;
-    line-height: 1.5;
+    line-height: 1.618;
   }
 
   body {
@@ -78,12 +82,12 @@
     max-width: 25em;
   }
 
-  .flush {
-    margin: 0;
-  }
-
   .pad {
     padding: 1rem;
+  }
+  
+  .flush {
+    margin: 0;
   }
 
   .pipe {
@@ -93,25 +97,77 @@
   .text {
     font-size: inherit;
   }
+  
+  dt {
+    font-weight: bold;
+    margin-block: 1em 0;
+  }
+  
+  dt:first-child {
+    margin-block: 0;
+  }
+  
+  :focus {
+    outline: thick dotted;
+  }
+  
+  :any-link:hover {
+    text-decoration-style: double;
+  }
 </style>
 
 <header>
-  <a class="logo" href="">
-    <span class="wordwave tape-blue">numb</span>
-    <span class="wordwave tape-yellow">page</span>
+  <a class="pad tape-white logo" href="">
+    <span class="wordwave">numb</span>
+    <span class="wordwave">page</span>
   </a>
 </header>
 
-<figure class="blurb">
-  <a href="https://webmural.com/143">overstanding numerology</a>
-  <br>
-  <a href="https://s9a.page/terms">comfortably number</a>
-</figure>
-
 <article class="blurb">
-  <h2 class="flush text">
-    <a class="pad pipe tape-green" href="https://s9a.page/angel">
+  <h2>
+    <a class="pad pipe tape-blue" href="https://s9a.page/angel">
       page your angel
     </a>
   </h2>
+  <h3 class="pad tape-blue flush">number meanings</h3>
+  <dl class="pad tape-blue flush">
+    <dt>1
+    <dd>leadership
+    <dd>beginnings
+    <dt>2
+    <dd>cooperation
+    <dd>partnership
+    <dt>3
+    <dd>joy
+    <dd>expression
+    <dt>4
+    <dd>foundation
+    <dd>stability
+    <dt>5
+    <dd>freedom
+    <dd>adventure
+    <dt>6
+    <dd>balance
+    <dd>harmony
+    <dt>7
+    <dd>overstanding
+    <dd>creativity
+    <dt>8
+    <dd>prosperity
+    <dd>spirituality
+    <dt>9
+    <dd>love
+    <dd>surrender
+    <dd>completion
+    <dt><a class="tape-pink" href="https://webmural.com/143">143</a>
+    <dd>i love you
+    <dt><a class="tape-green" href="https://s9a.page/1111">1111</a>
+    <dd>uranus
+    <dd>fingers
+    <dd>seasons
+  </dl>
 </article>
+
+<aside class="blurb" aria-label="numeronyms">
+  <h3><a class="pad tape-yellow" href="https://s9a.page/terms">comfortably number</a></h3>
+</aside>
