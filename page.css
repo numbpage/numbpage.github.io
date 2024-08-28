@@ -1,0 +1,102 @@
+/*
+=D
+*/
+
+html {
+  font-size: calc(1em + 1vmin + 1pt);
+  font-family: sans-serif;
+  line-height: 1.618;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  margin: 2rem;
+  overflow-wrap: anywhere;
+}
+
+header {
+  align-self: flex-start;
+}
+
+* { box-sizing: border-box }
+a { display: inline-flex }
+.dotty { text-decoration-style: dotted }
+dl a { display: inline }
+
+.logo {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: monospace;
+  font-size: 1.618rem;
+  display: table;
+  text-decoration: none;
+}
+
+.blurb {
+  margin: 2rem 0;
+  min-width: min(30em, 80vw);
+}
+
+.wordwave { display: table }  
+.cad { padding-inline: .618ch; padding-block-end: .382ch; }
+.pad { padding: 1rem }
+.flush { margin: 0 }
+
+small {
+  font-size: 1rem;
+  float: right;
+}
+
+dt {
+  display: flow-root;
+  font-size: 1.236em;
+  margin-block: 1em 0;
+}
+
+dt:first-child {
+  margin-block: 0;
+}
+
+dd {
+  display: flow-root;
+  margin: 0;
+}
+
+.boost,
+dd i {
+  font-size: 1.236em;
+}
+
+dt[class*=tape] {
+  padding: 1ch;
+}
+
+dd[class*=tape] {
+  margin: 0;
+  padding-inline-start: 1ch;
+}
+
+.dyno { padding-block-end: 1em }
+.simp { font-family: monospace }
+samp { text-align: inline-end; font-size: .8rem; }
+mark { font-weight: bold }
+
+:focus {
+  outline: thick dotted;
+}
+
+[href^="#"] {
+  text-decoration-style: dashed;
+}
+
+:any-link:hover {
+  text-decoration-style: double;
+}
+
+@media (orientation:portrait)
+  body {
+    margin-inline: 1em;
+  }
+}
