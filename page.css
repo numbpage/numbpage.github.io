@@ -20,10 +20,20 @@ header {
   align-self: flex-start;
 }
 
+footer p {
+  margin: 0;
+}
+
+
+h1, h2, h3 {
+  display: flow-root;
+}
+
 * { box-sizing: border-box }
 a { display: inline-flex }
-.dotty { text-decoration-style: dotted }
 dl a { display: inline }
+samp { font-size: .764rem }
+mark { font-weight: bold }
 
 .logo {
   box-sizing: border-box;
@@ -38,11 +48,6 @@ dl a { display: inline }
   margin: 2rem 0;
   min-width: min(30em, 80vw);
 }
-
-.wordwave { display: table }  
-.cad { padding-inline: .618ch; padding-block-end: .382ch; }
-.pad { padding: 1rem }
-.flush { margin: 0 }
 
 small {
   font-size: 1rem;
@@ -78,10 +83,15 @@ dd[class*=tape] {
   padding-inline-start: 1ch;
 }
 
+.dotty { text-decoration-style: dotted }
+.wordwave { display: table }  
+.cad { padding-inline: .618ch; padding-block-end: .382ch; }
+.pad { padding: 1rem }
+.flush { margin: 0 }
 .dyno { padding-block-end: 1em }
 .simp { font-family: monospace }
-samp { text-align: inline-end; font-size: .8rem; }
-mark { font-weight: bold }
+.flart { float: inline-start }
+.flend { float: inline-end }
 
 :focus {
   outline: thick dotted;
@@ -95,7 +105,10 @@ mark { font-weight: bold }
   text-decoration-style: double;
 }
 
-@media (orientation:portrait)
+#elves { display: none }
+#elves:target { display: flow-root }
+
+@media (orientation:portrait) {
   body {
     margin-inline: 1em;
   }
