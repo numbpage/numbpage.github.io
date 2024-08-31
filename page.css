@@ -18,34 +18,30 @@ body {
 
 header {
   align-self: flex-start;
+  contain: content;
 }
 
-footer p {
-  margin: 0;
-}
-
-h1, h2, h3 {
-  display: flow-root;
+footer,
+article {
+  contain: content;
+  margin: 2rem 0 3em;
+  min-width: min(30em, 80vw);
 }
 
 * { box-sizing: border-box }
-a { display: inline-flex }
-dl a { display: inline }
+a { display: inline-block }
+kbd,
+i { font-size: 1.236rem }
 samp { font-size: .764rem }
-mark { font-weight: bold }
+span { font-weight: 400 }
+mark { font-weight: 700 }
+h2 { margin-block: 2rem }
 
 .logo {
-  box-sizing: border-box;
   padding: 0;
   font-family: monospace;
   font-size: 1.618rem;
-  display: table;
   text-decoration: none;
-}
-
-.blurb {
-  margin: 2rem 0;
-  min-width: min(30em, 80vw);
 }
 
 small {
@@ -53,10 +49,14 @@ small {
   float: right;
 }
 
+dl {
+  margin-block: 3ch 0;
+}
+
 dt {
   display: flow-root;
   font-size: 1.236em;
-  margin-block: 1em 0;
+  margin-block: 3ch 0;
 }
 
 dt:first-child {
@@ -65,12 +65,8 @@ dt:first-child {
 
 dd {
   display: flow-root;
-  margin: 0;
-}
-
-.boost,
-dd i {
-  font-size: 1.236em;
+  margin-block: 1ch;
+  margin-inline: 0;
 }
 
 dt[class*=tape] {
@@ -84,13 +80,14 @@ dd[class*=tape] {
 
 .dotty { text-decoration-style: dotted }
 .wordwave { display: table }  
-.cad { padding-inline: .618ch; padding-block-end: .382ch; }
-.pad { padding: 1rem }
-.flush { margin: 0 }
+.cad { padding-inline: 1ch; padding-block: .236ch .382ch }
+.pad { padding: 1em }
 .dyno { padding-block-end: 1em }
-.simp { font-family: monospace }
+.simp { font-family: monospace; font-size: unset }
+.flush { margin: 0 }
 .flart { float: inline-start }
 .flend { float: inline-end }
+.fruit { display: flow-root }
 
 :focus {
   outline: thick dotted;
