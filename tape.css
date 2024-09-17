@@ -69,6 +69,7 @@ https://s9a.page/tape remix
 .naranja { --tape-hex: orange }
 .nurple { --tape-hex: plum }
 .blurple { --tape-black: #518 }
+.bae { --tape-hex: #bae }
 
 .roygbiv {
   background-image: linear-gradient(
